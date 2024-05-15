@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimates</title>
+    <link rel="stylesheet" href="../vr_css/vr_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vacation Resort</h1>
+        <nav>
+            <ul>
+                <li><a href="../vr_ind.html">Home</a></li>
+                <li><a href="../vr_pages/estimates.html">Estimates</a></li>
+                <li><a href="../vr_pages/dining.html">Dining</a></li>
+                <li><a href="../vr_pages/car_rental.html">Car Rentals</a></li>
+                <li><a href="../vr_pages/activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Estimates</h1>
+            <p>There are a variety of packages our resort offers. We can help choose
+                whats right for you and your budget.
+            </p>
+        </section>
+        <section>
+            <h1>Get a Quote</h1>
+            <p>Use our quick and easy cost estimator to get a quote sent to your email.
+                Actual costs may vary.
+            </p>
+            <div class="cost_estimator">
+                <form id="estimateForm">
+                    <fieldset>
+                        <legend>Cost Estimator</legend>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" required>
+                        </div>
+                        <fieldset>
+                            <legend>Stay Information</legend>
+                            <div>
+                                <label for="check_in">Check-in Date:</label>
+                                <input id="check_in" type="date" required>
+                            </div>
+                            <div>
+                                <label for="nights">Duration of Stay:</label>
+                                <input id="nights" type="number" required min="1" max="28">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Room Size</legend>
+                            <div>
+                                <input name="room" id="queen" type="radio" required>
+                                <label for="queen">Queen Suite</label>
+                            </div>
+                            <div>
+                                <input name="room" id="king" type="radio" required>
+                                <label for="king">King Suite</label>
+                            </div>
+                            <div>
+                                <input name="room" id="double" type="radio" required>
+                                <label for="double">Double Suite</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Guest Information</legend>
+                            <div>
+                                <label for="adults">Adults:</label>
+                                <input id="adults" type="number" required min="1" max="4">
+                            </div>
+                            <div>
+                                <label for="children">Children:</label>
+                                <input id="children" type="number" required min="0" max="4">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Discounts</legend>
+                            <div>
+                                <input name="discount" id="none" type="radio" required>
+                                <label for="none">None</label>
+                            </div>
+                            <div>
+                                <input name="discount" id="senior" type="radio" required>
+                                <label for="senior">Senior (10%)</label>
+                            </div>
+                            <div>
+                                <input name="discount" id="military" type="radio" required>
+                                <label for="military">Military (20%)</label>
+                            </div>
+                        </fieldset>
+                        <button type="submit">Get My Quote!</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="output" id="gen_quote"></div>
+            <script src="../vr_js/cost_estimator.js"></script>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button> <!-- Hamburger button -->
+            <ul class="nav_links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="../resume_content/resume.html">Resume</a> <!-- Main link for dropdown -->
+                    <ul class="dropdown_content">
+                        <li><a href="../resume_content/calculators.html">Calculators</a></li>
+                        <li><a href="../resume_content/projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="../art.html">Art</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../../js/script.js"></script>
+    <section>
+        <div class="container">
+            <h1 class="section_title">Projects</h1>
+            <p>A collection of projects that I am working on and have finished.
+                Included are demo websites, C++ and C# projects, and other repos
+                I've made. Most of these are either demos or works in progress. You
+                can see the full scope of everything that I've worked on in my GitHub
+                page.
+            </p>
+        </div>
+        <div class="container">
+            <h1 class="section_title">Demo Websites</h1>
+            <div>
+                <h2 class="section_title">
+                    <a class="button" href="../resume_content/projects/vacation_resort/vr_ind.html">Vacation Resort
+                        Website</a>
+                </h2>
+                <div class="side_by_side">
+                    <ul>
+                        <li>- A home page with informational text about the resort,
+                            images, and navigation links</li>
+                        <li>
+                            - A page that helps guests plan their overnight stay
+                            based on parameters the user selects</li>
+                        <li>- A page that helps guests plan their dining</li>
+                        <li>- A page that helps guests rent a car</li>
+                        <li>- A page that helps guests plan their activities while
+                            at the resort</li>
+                    </ul>
+                    <div>
+                        <img id="img1" src="../../images/vacation_resort_demo.png">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="section_title">
+                    <a class="button" href="../resume_content/projects/tourist_bureau/tb_ind.html">Tourist Bureau
+                        Website</a>
+                </h2>
+                <div class="side_by_side">
+                    <div>
+                        <img id="img2" src="../../images/tourist_bureau_demo.png">
+                    </div>
+                    <ul>
+                        <li>- A home page with informational text/images promoting the town and navigation links
+                            to the other pages.</li>
+                        <li>- A page that lets tourists search for and read about activities in the area. If they like an
+                            activity, they can buy an e-ticket for it right there.</li>
+                        <li>- A page that lets tourists learn about popular local hikes.</li>
+                        <li>- A page that lets tourists watch a video about the area.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

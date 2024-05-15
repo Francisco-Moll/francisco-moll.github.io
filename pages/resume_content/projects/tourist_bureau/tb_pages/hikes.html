@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Trails</title>
+    <link rel="stylesheet" href="../tb_css/tb_styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../tb_ind.html">National Parks Explorer</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../tb_pages/hikes.html">Hiking Trails</a></li>
+                <li><a href="../tb_pages/activities.html">Park Activities</a></li>
+                <li><a href="../tb_pages/videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <section id="hike-selector">
+            <label for="hikes">Choose a hike:</label>
+            <select id="hikes" onchange="showHikeDetails()">
+                <option>Select one</option>
+                <!-- Hike options will be populated here by JavaScript -->
+            </select>
+        </section>
+        <section id="hike-details" style="display:none;">
+            <h2 id="hike-name"></h2>
+            <p id="hike-description"></p>
+            <p id="hike-length"></p>
+            <p id="hike-difficulty"></p>
+            <img id="scenic-image" src="" alt="Scenic view of the hike">
+            <img id="trail-map-image" src="" alt="Trail map of the hike">
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+    <script src="../tb_js/hiking.js"></script>
+</body>
+</html>

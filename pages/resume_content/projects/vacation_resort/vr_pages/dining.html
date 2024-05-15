@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining</title>
+    <link rel="stylesheet" href="../vr_css/vr_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vacation Resort</h1>
+        <nav>
+            <ul>
+                <li><a href="../vr_ind.html">Home</a></li>
+                <li><a href="../vr_pages/estimates.html">Estimates</a></li>
+                <li><a href="../vr_pages/dining.html">Dining</a></li>
+                <li><a href="../vr_pages/car_rental.html">Car Rentals</a></li>
+                <li><a href="../vr_pages/activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <h1>Dining</h1>
+            <div class="side_a">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel commodo ipsum,
+                    a interdum odio. Aenean eu tortor dolor. Interdum et malesuada fames ac ante
+                    ipsum primis in faucibus. Vivamus massa urna, fringilla sed dui quis, volutpat
+                    scelerisque purus. Donec nec rutrum neque. Vestibulum commodo leo et tempor
+                    volutpat. Etiam vel ornare urna. Phasellus iaculis lorem tortor, et malesuada
+                    lorem suscipit id. Vivamus rhoncus lorem quis vehicula mattis. Aenean rhoncus
+                    commodo nulla, sed tristique dolor. Suspendisse eget tortor aliquam, vehicula
+                    sem at, tincidunt justo. </p>
+                <img id="img1" src="../vr_images/restaurant.jpg">
+            </div>
+            <h1>Dining Options</h1>
+            <div class="side_b">
+                <img id="img2" src="../vr_images/restaurant2.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.</p>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Dining Style</th>
+                    </tr>
+                    <tr>
+                        <td><label><input type="radio" name="diningOption" value="payGo"
+                                    onclick="toggleDiningOption()">Pay-as-you-go</label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="radio" name="diningOption" value="allInclusive" checked="true"
+                                    onclick="toggleDiningOption()">All-Inclusive</label></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table_hidden">
+                <table>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Adult</th>
+                        <th>Child</th>
+                    </tr>
+                    <tr>
+                        <td>Basic</td>
+                        <td>$62.50/day</td>
+                        <td>$49.99/day</td>
+                    </tr>
+                    <tr>
+                        <td>Premium (incl drinks)</td>
+                        <td>$80.00/day</td>
+                        <td>$49.99/day</td>
+                    </tr>
+                </table>
+            </div>
+            <script src="../vr_js/dining_option.js"></script>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+
+</html>

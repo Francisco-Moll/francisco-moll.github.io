@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="../tb_css/tb_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="../tb_ind.html">National Parks Explorer</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../tb_pages/hikes.html">Hiking Trails</a></li>
+                <li><a href="../tb_pages/activities.html">Park Activities</a></li>
+                <li><a href="../tb_pages/videos.html">Videos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <section id="activity-selector">
+                <label for="category">Choose a category:</label>
+                <select id="category" onchange="updateActivityList()">
+                    <option>Select one</option>
+                    <!-- Options will be filled by JavaScript -->
+                </select>
+                <label for="activities">Choose an activity:</label>
+                <select id="activities" onchange="showActivityDetails()">
+                    <option>Select one</option>
+                    <!-- Options will be filled by JavaScript -->
+                </select>
+            </section>
+            <section id="activity_details" style="display:none;">
+                <!-- Details will be filled by JavaScript -->
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+    <script src="../tb_js/activities.js"></script>
+</body>
+
+</html>

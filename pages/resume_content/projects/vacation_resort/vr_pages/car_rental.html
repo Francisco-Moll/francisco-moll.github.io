@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals</title>
+    <link rel="stylesheet" href="../vr_css/vr_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vacation Resort</h1>
+        <nav>
+            <ul>
+                <li><a href="../vr_ind.html">Home</a></li>
+                <li><a href="../vr_pages/estimates.html">Estimates</a></li>
+                <li><a href="../vr_pages/dining.html">Dining</a></li>
+                <li><a href="../vr_pages/car_rental.html">Car Rentals</a></li>
+                <li><a href="../vr_pages/activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Car Rentals</h1>
+        <div class="side_a">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img id="img3" src="../vr_images/miata.jpg">
+        </div>
+        <h1>Rental Estimates</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget
+                nullam non nisi est sit amet facilisis. Turpis egestas pretium aenean
+                pharetra. Purus in mollis nunc sed id semper risus. Nec sagittis aliquam
+                malesuada bibendum arcu. Egestas diam in arcu cursus euismod. Dui nunc
+                mattis enim ut tellus elementum sagittis vitae.</p>
+            <div class="cost_estimator">
+                <form id="car_rental">
+                    <fieldset>
+                        <legend>Rental Estimator</legend>
+                        <div>
+                            <label for="pickup">Pick-Up Date:</label>
+                            <input id="pickup" type="date">
+                        </div>
+                        <div>
+                            <label for="days">Number of Days:</label>
+                            <input id="days" type="number">
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend>Options</legend>
+                                <div>
+                                    <div>
+                                        <input id="tolltag" type="checkbox" name="tolltag">
+                                        <label for="tolltag">Electronic Toll Tag ($3.95/day)</label>
+                                    </div>
+                                    <div>
+                                        <input id="gps" type="checkbox" name="gps">
+                                        <label for="gps">GPS ($2.95/day)</label>
+                                    </div>
+                                    <div>
+                                        <input id="roadside" type="checkbox" name="roadside">
+                                        <label for="roadside">Roadside Assistance ($2.95/day)</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Under 25</legend>
+                                <div>
+                                    <div>
+                                        <input id="25no" type="radio" name="under25" value="no">
+                                        <label for="25no">No (30% Surcharge)</label>
+
+                                        <input id="25yes" type="radio" name="under25" value="yes">
+                                        <label for="25yes">Yes</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <button type="submit">Get My Quote!</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="output" id="car_quote"></div>
+            <script src="../vr_js/car_quote.js"></script>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    background-image: url(../tb_images/forest.jpg);
+}
+
+header {
+    background-color: #006400;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 10px 10px;
+}
+
+.intro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.featured img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#hike-details img {
+    width: 100%; 
+    height: auto; 
+    margin: 10px 0;
+}
+
+/* Specific styling for the scenic image */
+#scenic-image {
+    max-width: 600px;
+}
+
+/* Specific styling for the trail map image */
+#trail-map-image {
+    max-width: 600px;
+}
+
+.purchase_form {
+    display: flex;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #006400;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .featured-park img {
+        max-height: 200px;
+    }
+}

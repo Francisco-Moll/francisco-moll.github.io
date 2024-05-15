@@ -1,0 +1,239 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px;
+    /* Added padding to top to account for fixed navbar */
+}
+
+/* Navigation bar styles */
+.nav_bar {
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav_bar li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.nav_bar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.nav_bar a:hover {
+    background-color: #555;
+}
+
+/* Paragraph styles */
+p {
+    padding: 0 20px;
+}
+
+/* Resume container */
+.container {
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.side_by_side {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Resume headings */
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+/* Section titles within the resume */
+.section_title {
+    color: #555;
+    font-weight: bold;
+}
+
+/* List styling for expertise and experiences */
+ul {
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Additional styles for the contact page layout */
+.contact_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact_info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact_form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Dropdown menu styles */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#img1,
+#img2 {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .contact_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav_bar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_bar .hamburger {
+        display: block;
+    }
+
+    .nav_bar .nav_links.show {
+        display: flex;
+    }
+
+    .nav_bar .nav_links li {
+        margin: 10px 0;
+    }
+
+    .dropdown_content {
+        position: static;
+        box-shadow: none;
+    }
+
+    .dropdown.show .dropdown_content {
+        display: flex;
+    }
+}    

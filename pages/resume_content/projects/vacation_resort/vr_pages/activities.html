@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals</title>
+    <link rel="stylesheet" href="../vr_css/vr_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vacation Resort</h1>
+        <nav>
+            <ul>
+                <li><a href="../vr_ind.html">Home</a></li>
+                <li><a href="../vr_pages/estimates.html">Estimates</a></li>
+                <li><a href="../vr_pages/dining.html">Dining</a></li>
+                <li><a href="../vr_pages/car_rental.html">Car Rentals</a></li>
+                <li><a href="../vr_pages/activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Activities & Events</h1>
+        <div class="side_a">
+            <div>
+                <h1>Sceduled Events</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Non pulvinar neque laoreet
+                    suspendisse. In cursus turpis massa tincidunt dui. Magnis dis parturient
+                    montes nascetur ridiculus. Commodo sed egestas egestas fringilla phasellus
+                    faucibus. Ut aliquam purus sit amet luctus venenatis. Sit amet venenatis urna
+                    cursus eget nunc scelerisque viverra mauris.</p>
+                <div>
+                    <ul>
+                        <li>Lorem Ipsum</li>
+                        <li>Dolor Sit Amet</li>
+                        <li>Consectetur Adipiscing</li>
+                        <li>Incididunt ut Labore</li>
+                        <li>Luctus Venenatis</li>
+                    </ul>
+                </div>
+                <p>Aliquam id diam maecenas ultricies mi eget mauris. Eu turpis egestas pretium
+                    aenean pharetra magna ac placerat vestibulum. Mi in nulla posuere
+                    sollicitudin. Tellus mauris a diam maecenas sed enim ut. Aliquam nulla
+                    facilisi cras fermentum odio eu. A cras semper auctor neque vitae
+                    tempus quam pellentesque. Elit ullamcorper dignissim cras tincidunt
+                    lobortis feugiat vivamus. Tellus pellentesque eu tincidunt tortor
+                    aliquam nulla facilisi. Nulla facilisi cras fermentum odio eu feugiat
+                    pretium nibh.</p>
+            </div>
+            <img id="img5" src="../vr_images/zipline.jpg">
+        </div>
+        <div class="side_b">
+            <img id="img5" src="../vr_images/crafts.jpg">
+            <div>
+                <h1>Daily Activities</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Non pulvinar neque laoreet
+                    suspendisse. In cursus turpis massa tincidunt dui. Magnis dis parturient
+                    montes nascetur ridiculus. Commodo sed egestas egestas fringilla phasellus
+                    faucibus. Ut aliquam purus sit amet luctus venenatis. Sit amet venenatis urna
+                    cursus eget nunc scelerisque viverra mauris.</p>
+                <div>
+                    <ul>
+                        <li>Lorem Ipsum</li>
+                        <li>Dolor Sit Amet</li>
+                        <li>Consectetur Adipiscing</li>
+                        <li>Incididunt ut Labore</li>
+                        <li>Luctus Venenatis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h1>All Activities</h1>
+            <select id="activity_category" onchange="showActivities(this.value)">
+                <option value="">Select a Category</option>
+                <option value="Arts/Crafts">Arts/Crafts</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Museums/Culture">Museums/Culture</option>
+            </select>
+            <section id="activity_list"></section>
+        <script src="../vr_js/activities.js"></script>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button> <!-- Hamburger button -->
+            <ul class="nav_links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="../resume.html">Resume</a> <!-- Main link for dropdown -->
+                    <ul class="dropdown_content">
+                        <li><a href="../calculators.html">Calculators</a></li>
+                        <li><a href="../projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../art.html">Art</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../../../js/script.js"></script>
+    <section>
+        <div class="container">
+            <h1>Mortagage Calculator</h1>
+            <label for="initLoan">Principal:</label>
+            <input type="number" id="initLoan" step="0.01" required />
+            <br />
+            <label for="invRate">Interest Rate (Decimal Value):</label>
+            <input type="number" id="invRate" step="0.01" required />
+            <br />
+            <label for="years">Loan Length (Years):</label>
+            <input type="number" id="years" step="0.01" required />
+            <br />
+            <button type="button" id="calcBtn">Calculate</button>
+            <br />
+            <div id="output"></div>
+        </div>
+        <script src="../../../js/mortgage_calculator.js"></script>
+    </section>
+</body>
+
+</html>

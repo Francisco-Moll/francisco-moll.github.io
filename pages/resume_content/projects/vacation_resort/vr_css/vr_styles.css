@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cost_estimator {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.table,
+.table_hidden {
+    display: flex;
+    justify-content: center;
+}
+
+.side_a,
+.side_b {
+    display: flex;
+}
+
+#img1,
+#img2,
+#img3,
+#img5,
+#img6 {
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+}
+#img4 {
+    padding: 10px;
+    width: 80%;
+    height: 100%;
+}
+
+.output {
+    text-align: center;
+    padding: 5px;
+}
+
+select {
+    padding: 5px;
+}
