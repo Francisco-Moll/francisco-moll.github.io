@@ -170,7 +170,6 @@ button:hover {
 .container {
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 20px;
 }
 
@@ -200,7 +199,8 @@ button:hover {
 }
 
 #img1,
-#img2 {
+#img2,
+#img3 {
     width: 100%;
 }
 
