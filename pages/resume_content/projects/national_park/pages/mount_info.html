@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container" id="header_text">
+            <h1><a href="../index.html">America's National Parks</a></h1>
+        </div>
+    </header>
+    <main>
+        <div class="filler"></div>
+        <div class="container pillbox">
+            <h2>Search for Mountains</h2>
+            <div class="mountainDropdown">
+                <label for="mtDropdown">Search Mountains:</label>
+                <select id="mtDropdown" onchange="updateMountainDetails()">
+                    <option value="">-- Select Mountain --</option>
+                    <!-- Populate by JavaScript -->
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="mountain_details">
+            <!-- Mountain will be displayed via JavaScript -->
+        </div>
+        <br>
+        <div class="container" id="sunrise_sunset_details">
+            <!-- Sunrise and sunset times will be displayed via JavaScript -->
+        </div>
+    </main>
+
+    <script src="../js/parallax.js"></script>
+    <script src="../js/data/mountainData.js"></script>
+    <script src="../js/mountainSearch.js"></script>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+
+</html>
